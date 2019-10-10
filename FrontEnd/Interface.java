@@ -20,42 +20,42 @@ public class Interface extends JFrame {
 	private JPanel fondoPane;
 	private JTextField buscarTextField;
 	private JButton analizarButton;
-	private JComboBox comboBox_1;
-	private JComboBox comboBox_2;
-	private JComboBox comboBox_3;
-	private JComboBox comboBox_4;
-	private JComboBox comboBox_5;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
-	private JTextField textField_4;
-	private JTextField textField_5;
-	private JTextField textField_6;
-	private JTextField textField_7;
-	private JLabel lblFanIn;
-	private JLabel lblLongitud;
-	private JTextField textField_8;
-	private JLabel lblN;
-	private JTextField textField_9;
-	private JLabel lblN_1;
-	private JTextField textField_10;
-	private JLabel lblVolumen;
-	private JTextField textField_11;
-	private JLabel lblDificultad;
-	private JTextField textField_12;
-	private JLabel lblNivel;
-	private JTextField textField_13;
-	private JLabel lblEsfuerzo;
-	private JTextField textField_14;
-	private JLabel lblTiempoEntendido;
-	private JTextField textField_15;
-	private JLabel lblN_2;
-	private JLabel lblN_3;
-	private JLabel lblN_4;
-	private JTextField textField_16;
-	private JTextField textField_17;
-	private JTextField textField_18;
+	private JComboBox proyectoComboBox;
+	private JComboBox packageComboBox;
+	private JComboBox archivoComboBox;
+	private JComboBox claseComboBox;
+	private JComboBox metodoComboBox;
+	private JTextField tipoTextField;
+	private JTextField ccTextField;
+	private JTextField codigoTextField;
+	private JTextField comentariosTextField;
+	private JTextField comentariosTextField_2;
+	private JTextField fanOutTextField;
+	private JTextField fanOutTextField_2;
+	private JTextField fanInTextField;
+	private JLabel fanInLabel;
+	private JLabel longitudLabel;
+	private JTextField longitudTextField;
+	private JLabel nMay1Label;
+	private JTextField nMay1TextField;
+	private JLabel nMay2Label;
+	private JTextField nMay2TextField;
+	private JLabel volumenLabel;
+	private JTextField volumenTextField;
+	private JLabel dificultadLabel;
+	private JTextField dificultadTextField;
+	private JLabel nivelLabel;
+	private JTextField nivelTextField;
+	private JLabel esfuerzoLabel;
+	private JTextField esfuerzoTextField;
+	private JLabel tEntendidoLabel;
+	private JTextField tEntendidoTextField;
+	private JLabel nLabel;
+	private JLabel n1Label;
+	private JLabel n2Label;
+	private JTextField nTextField;
+	private JTextField n1TextField;
+	private JTextField n2TextField;
 
 	/**
 	 * Launch the application.
@@ -90,130 +90,128 @@ public class Interface extends JFrame {
 		
 		analizarButton = new JButton("Analizar");
 		
-		JComboBox comboBox = new JComboBox();
+		JComboBox sourcePackageComboBox = new JComboBox();
 		
-		comboBox_1 = new JComboBox();
+		proyectoComboBox = new JComboBox();
 		
-		comboBox_2 = new JComboBox();
+		packageComboBox = new JComboBox();
 		
-		comboBox_3 = new JComboBox();
+		archivoComboBox = new JComboBox();
 		
-		comboBox_4 = new JComboBox();
+		claseComboBox = new JComboBox();
 		
-		comboBox_5 = new JComboBox();
+		metodoComboBox = new JComboBox();
 		
-		JLabel lblLabel = new JLabel("Label 1");
+		JLabel proyectoLabel = new JLabel("Proyecto");
 		
-		JLabel lblLabel_1 = new JLabel("Label 2");
+		JLabel sourcePackageLabel = new JLabel("Source Package");
 		
-		JLabel lblLabel_2 = new JLabel("Label 3");
+		JLabel packageLabel = new JLabel("Package");
 		
-		JLabel lblLabel_3 = new JLabel("Label 4");
+		JLabel archivoLabel = new JLabel("Archivo");
 		
-		JLabel lblLabel_4 = new JLabel("Label 5");
+		JLabel claseLabel = new JLabel("Clase");
 		
-		JLabel lblLabel_5 = new JLabel("Label 6");
+		JLabel metodoLabel = new JLabel("Metodo");
 		
-		textField = new JTextField();
-		textField.setColumns(10);
+		tipoTextField = new JTextField();
+		tipoTextField.setColumns(10);
 		
-		JLabel lblTipo = new JLabel("Tipo");
+		JLabel tipoLabel = new JLabel("Tipo");
 		
-		textField_1 = new JTextField();
-		textField_1.setColumns(10);
+		ccTextField = new JTextField();
+		ccTextField.setColumns(10);
 		
-		JLabel lblCc = new JLabel("CC");
+		JLabel ccLabel = new JLabel("CC");
 		
-		textField_2 = new JTextField();
-		textField_2.setColumns(10);
+		codigoTextField = new JTextField();
+		codigoTextField.setColumns(10);
 		
-		JLabel lblCodigo = new JLabel("Codigo");
+		JLabel codigoLabel = new JLabel("Codigo");
 		
-		textField_3 = new JTextField();
-		textField_3.setColumns(10);
+		comentariosTextField = new JTextField();
+		comentariosTextField.setColumns(10);
 		
-		JLabel lblComentarios = new JLabel("Comentarios");
+		JLabel comentariosLabel = new JLabel("Comentarios");
 		
-		textField_4 = new JTextField();
-		textField_4.setColumns(10);
+		comentariosTextField_2 = new JTextField();
+		comentariosTextField_2.setColumns(10);
 		
-		textField_5 = new JTextField();
-		textField_5.setColumns(10);
+		fanOutTextField = new JTextField();
+		fanOutTextField.setColumns(10);
 		
-		JLabel lblFanOut = new JLabel("Fan Out");
+		JLabel fanOutLabel = new JLabel("Fan Out");
 		
-		textField_6 = new JTextField();
-		textField_6.setColumns(10);
+		fanOutTextField_2 = new JTextField();
+		fanOutTextField_2.setColumns(10);
 		
-		textField_7 = new JTextField();
-		textField_7.setColumns(10);
+		fanInTextField = new JTextField();
+		fanInTextField.setColumns(10);
 		
-		lblFanIn = new JLabel("Fan In");
+		fanInLabel = new JLabel("Fan In");
 		
-		lblLongitud = new JLabel("Longitud");
+		longitudLabel = new JLabel("Longitud");
 		
-		textField_8 = new JTextField();
-		textField_8.setColumns(10);
+		longitudTextField = new JTextField();
+		longitudTextField.setColumns(10);
 		
-		lblN = new JLabel("N1");
+		nMay1Label = new JLabel("N1");
 		
-		textField_9 = new JTextField();
-		textField_9.setColumns(10);
+		nMay1TextField = new JTextField();
+		nMay1TextField.setColumns(10);
 		
-		lblN_1 = new JLabel("N2");
+		nMay2Label = new JLabel("N2");
 		
-		textField_10 = new JTextField();
-		textField_10.setColumns(10);
+		nMay2TextField = new JTextField();
+		nMay2TextField.setColumns(10);
 		
-		lblVolumen = new JLabel("Volumen");
+		volumenLabel = new JLabel("Volumen");
 		
-		textField_11 = new JTextField();
-		textField_11.setColumns(10);
+		volumenTextField = new JTextField();
+		volumenTextField.setColumns(10);
 		
-		lblDificultad = new JLabel("Dificultad");
+		dificultadLabel = new JLabel("Dificultad");
 		
-		textField_12 = new JTextField();
-		textField_12.setColumns(10);
+		dificultadTextField = new JTextField();
+		dificultadTextField.setColumns(10);
 		
-		lblNivel = new JLabel("Nivel");
+		nivelLabel = new JLabel("Nivel");
 		
-		textField_13 = new JTextField();
-		textField_13.setColumns(10);
+		nivelTextField = new JTextField();
+		nivelTextField.setColumns(10);
 		
-		lblEsfuerzo = new JLabel("Esfuerzo");
+		esfuerzoLabel = new JLabel("Esfuerzo");
 		
-		textField_14 = new JTextField();
-		textField_14.setColumns(10);
+		esfuerzoTextField = new JTextField();
+		esfuerzoTextField.setColumns(10);
 		
-		lblTiempoEntendido = new JLabel("Tiempo Entendido");
+		tEntendidoLabel = new JLabel("Tiempo Entendido");
 		
-		textField_15 = new JTextField();
-		textField_15.setColumns(10);
+		tEntendidoTextField = new JTextField();
+		tEntendidoTextField.setColumns(10);
 		
-		lblN_2 = new JLabel("n");
+		nLabel = new JLabel("n");
 		
-		lblN_3 = new JLabel("n1");
+		n1Label = new JLabel("n1");
 		
-		lblN_4 = new JLabel("n2");
+		n2Label = new JLabel("n2");
 		
-		textField_16 = new JTextField();
-		textField_16.setColumns(10);
+		nTextField = new JTextField();
+		nTextField.setColumns(10);
 		
-		textField_17 = new JTextField();
-		textField_17.setColumns(10);
+		n1TextField = new JTextField();
+		n1TextField.setColumns(10);
 		
-		textField_18 = new JTextField();
-		textField_18.setColumns(10);
-		
-		JList list = new JList();
+		n2TextField = new JTextField();
+		n2TextField.setColumns(10);
 		
 		JTextArea textArea = new JTextArea();
 		GroupLayout gl_fondoPane = new GroupLayout(fondoPane);
 		gl_fondoPane.setHorizontalGroup(
 			gl_fondoPane.createParallelGroup(Alignment.LEADING)
 				.addGroup(gl_fondoPane.createSequentialGroup()
-					.addGroup(gl_fondoPane.createParallelGroup(Alignment.LEADING)
-						.addGroup(Alignment.TRAILING, gl_fondoPane.createSequentialGroup()
+					.addGroup(gl_fondoPane.createParallelGroup(Alignment.TRAILING)
+						.addGroup(gl_fondoPane.createSequentialGroup()
 							.addGap(20)
 							.addComponent(buscarTextField, GroupLayout.DEFAULT_SIZE, 672, Short.MAX_VALUE)
 							.addGap(18)
@@ -225,97 +223,95 @@ public class Interface extends JFrame {
 							.addGap(20)
 							.addGroup(gl_fondoPane.createParallelGroup(Alignment.LEADING)
 								.addGroup(gl_fondoPane.createSequentialGroup()
-									.addComponent(lblLabel, GroupLayout.PREFERRED_SIZE, 147, GroupLayout.PREFERRED_SIZE)
+									.addComponent(proyectoLabel, GroupLayout.PREFERRED_SIZE, 147, GroupLayout.PREFERRED_SIZE)
 									.addGap(128)
-									.addComponent(lblTipo, GroupLayout.PREFERRED_SIZE, 43, GroupLayout.PREFERRED_SIZE)
+									.addComponent(tipoLabel, GroupLayout.PREFERRED_SIZE, 43, GroupLayout.PREFERRED_SIZE)
 									.addGap(21)
-									.addComponent(textField, GroupLayout.PREFERRED_SIZE, 177, GroupLayout.PREFERRED_SIZE))
+									.addComponent(tipoTextField, GroupLayout.PREFERRED_SIZE, 177, GroupLayout.PREFERRED_SIZE))
 								.addGroup(gl_fondoPane.createSequentialGroup()
-									.addComponent(comboBox_1, GroupLayout.PREFERRED_SIZE, 271, GroupLayout.PREFERRED_SIZE)
+									.addComponent(proyectoComboBox, GroupLayout.PREFERRED_SIZE, 271, GroupLayout.PREFERRED_SIZE)
 									.addGap(4)
-									.addComponent(lblCc, GroupLayout.PREFERRED_SIZE, 23, GroupLayout.PREFERRED_SIZE)
+									.addComponent(ccLabel, GroupLayout.PREFERRED_SIZE, 23, GroupLayout.PREFERRED_SIZE)
 									.addGap(41)
-									.addComponent(textField_1, GroupLayout.PREFERRED_SIZE, 57, GroupLayout.PREFERRED_SIZE)
+									.addComponent(ccTextField, GroupLayout.PREFERRED_SIZE, 57, GroupLayout.PREFERRED_SIZE)
 									.addGap(17)
-									.addComponent(lblCodigo)
+									.addComponent(codigoLabel)
 									.addGap(10)
-									.addComponent(textField_2, GroupLayout.PREFERRED_SIZE, 57, GroupLayout.PREFERRED_SIZE))
+									.addComponent(codigoTextField, GroupLayout.PREFERRED_SIZE, 57, GroupLayout.PREFERRED_SIZE))
 								.addGroup(gl_fondoPane.createSequentialGroup()
 									.addGroup(gl_fondoPane.createParallelGroup(Alignment.LEADING)
-										.addComponent(lblLabel_1, GroupLayout.PREFERRED_SIZE, 159, GroupLayout.PREFERRED_SIZE)
-										.addComponent(comboBox, GroupLayout.PREFERRED_SIZE, 271, GroupLayout.PREFERRED_SIZE)
-										.addComponent(lblLabel_2, GroupLayout.PREFERRED_SIZE, 122, GroupLayout.PREFERRED_SIZE)
-										.addComponent(comboBox_2, GroupLayout.PREFERRED_SIZE, 271, GroupLayout.PREFERRED_SIZE)
-										.addComponent(lblLabel_3, GroupLayout.PREFERRED_SIZE, 133, GroupLayout.PREFERRED_SIZE)
-										.addComponent(comboBox_3, GroupLayout.PREFERRED_SIZE, 271, GroupLayout.PREFERRED_SIZE)
-										.addComponent(lblLabel_4, GroupLayout.PREFERRED_SIZE, 128, GroupLayout.PREFERRED_SIZE)
-										.addComponent(comboBox_4, GroupLayout.PREFERRED_SIZE, 271, GroupLayout.PREFERRED_SIZE)
-										.addComponent(lblLabel_5, GroupLayout.PREFERRED_SIZE, 120, GroupLayout.PREFERRED_SIZE)
-										.addComponent(comboBox_5, GroupLayout.PREFERRED_SIZE, 271, GroupLayout.PREFERRED_SIZE))
+										.addComponent(sourcePackageLabel, GroupLayout.PREFERRED_SIZE, 159, GroupLayout.PREFERRED_SIZE)
+										.addComponent(sourcePackageComboBox, GroupLayout.PREFERRED_SIZE, 271, GroupLayout.PREFERRED_SIZE)
+										.addComponent(packageLabel, GroupLayout.PREFERRED_SIZE, 122, GroupLayout.PREFERRED_SIZE)
+										.addComponent(packageComboBox, GroupLayout.PREFERRED_SIZE, 271, GroupLayout.PREFERRED_SIZE)
+										.addComponent(archivoLabel, GroupLayout.PREFERRED_SIZE, 133, GroupLayout.PREFERRED_SIZE)
+										.addComponent(archivoComboBox, GroupLayout.PREFERRED_SIZE, 271, GroupLayout.PREFERRED_SIZE)
+										.addComponent(claseLabel, GroupLayout.PREFERRED_SIZE, 128, GroupLayout.PREFERRED_SIZE)
+										.addComponent(claseComboBox, GroupLayout.PREFERRED_SIZE, 271, GroupLayout.PREFERRED_SIZE)
+										.addComponent(metodoLabel, GroupLayout.PREFERRED_SIZE, 120, GroupLayout.PREFERRED_SIZE)
+										.addComponent(metodoComboBox, GroupLayout.PREFERRED_SIZE, 271, GroupLayout.PREFERRED_SIZE))
 									.addGap(4)
 									.addGroup(gl_fondoPane.createParallelGroup(Alignment.LEADING)
 										.addGroup(gl_fondoPane.createSequentialGroup()
 											.addGroup(gl_fondoPane.createParallelGroup(Alignment.LEADING)
-												.addComponent(lblComentarios)
-												.addComponent(lblFanOut, GroupLayout.PREFERRED_SIZE, 56, GroupLayout.PREFERRED_SIZE)
-												.addComponent(lblFanIn, GroupLayout.PREFERRED_SIZE, 39, GroupLayout.PREFERRED_SIZE)
-												.addComponent(lblLongitud, GroupLayout.PREFERRED_SIZE, 51, GroupLayout.PREFERRED_SIZE)
+												.addComponent(comentariosLabel)
+												.addComponent(fanOutLabel, GroupLayout.PREFERRED_SIZE, 56, GroupLayout.PREFERRED_SIZE)
+												.addComponent(fanInLabel, GroupLayout.PREFERRED_SIZE, 39, GroupLayout.PREFERRED_SIZE)
+												.addComponent(longitudLabel, GroupLayout.PREFERRED_SIZE, 51, GroupLayout.PREFERRED_SIZE)
 												.addGroup(gl_fondoPane.createParallelGroup(Alignment.TRAILING, false)
-													.addComponent(lblN_1, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-													.addComponent(lblN, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE))
-												.addComponent(lblDificultad, GroupLayout.PREFERRED_SIZE, 51, GroupLayout.PREFERRED_SIZE)
-												.addComponent(lblNivel, GroupLayout.PREFERRED_SIZE, 51, GroupLayout.PREFERRED_SIZE))
+													.addComponent(nMay2Label, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+													.addComponent(nMay1Label, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE))
+												.addComponent(dificultadLabel, GroupLayout.PREFERRED_SIZE, 51, GroupLayout.PREFERRED_SIZE)
+												.addComponent(nivelLabel, GroupLayout.PREFERRED_SIZE, 51, GroupLayout.PREFERRED_SIZE))
 											.addGap(4)
 											.addGroup(gl_fondoPane.createParallelGroup(Alignment.LEADING)
 												.addGroup(gl_fondoPane.createSequentialGroup()
 													.addGroup(gl_fondoPane.createParallelGroup(Alignment.LEADING)
-														.addComponent(textField_3, GroupLayout.PREFERRED_SIZE, 53, GroupLayout.PREFERRED_SIZE)
-														.addComponent(textField_5, GroupLayout.PREFERRED_SIZE, 58, GroupLayout.PREFERRED_SIZE)
-														.addComponent(textField_7, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-														.addComponent(textField_8, GroupLayout.PREFERRED_SIZE, 77, GroupLayout.PREFERRED_SIZE))
+														.addComponent(comentariosTextField, GroupLayout.PREFERRED_SIZE, 53, GroupLayout.PREFERRED_SIZE)
+														.addComponent(fanOutTextField, GroupLayout.PREFERRED_SIZE, 58, GroupLayout.PREFERRED_SIZE)
+														.addComponent(fanInTextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+														.addComponent(longitudTextField, GroupLayout.PREFERRED_SIZE, 77, GroupLayout.PREFERRED_SIZE))
 													.addGap(18)
-													.addComponent(lblN_2, GroupLayout.PREFERRED_SIZE, 19, GroupLayout.PREFERRED_SIZE)
+													.addComponent(nLabel, GroupLayout.PREFERRED_SIZE, 19, GroupLayout.PREFERRED_SIZE)
 													.addPreferredGap(ComponentPlacement.RELATED)
 													.addGroup(gl_fondoPane.createParallelGroup(Alignment.LEADING)
-														.addComponent(textField_16, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-														.addComponent(textField_4, GroupLayout.PREFERRED_SIZE, 84, GroupLayout.PREFERRED_SIZE)
-														.addComponent(textField_6, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
+														.addComponent(nTextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+														.addComponent(comentariosTextField_2, GroupLayout.PREFERRED_SIZE, 84, GroupLayout.PREFERRED_SIZE)
+														.addComponent(fanOutTextField_2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
 												.addGroup(gl_fondoPane.createSequentialGroup()
 													.addGroup(gl_fondoPane.createParallelGroup(Alignment.LEADING)
 														.addGroup(gl_fondoPane.createParallelGroup(Alignment.LEADING, false)
-															.addComponent(textField_9)
+															.addComponent(nMay1TextField)
 															.addGroup(gl_fondoPane.createSequentialGroup()
 																.addGap(5)
 																.addGroup(gl_fondoPane.createParallelGroup(Alignment.LEADING)
-																	.addComponent(textField_13, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-																	.addComponent(textField_12, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))))
-														.addComponent(textField_10, GroupLayout.PREFERRED_SIZE, 77, GroupLayout.PREFERRED_SIZE))
+																	.addComponent(nivelTextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+																	.addComponent(dificultadTextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))))
+														.addComponent(nMay2TextField, GroupLayout.PREFERRED_SIZE, 77, GroupLayout.PREFERRED_SIZE))
 													.addPreferredGap(ComponentPlacement.UNRELATED)
 													.addGroup(gl_fondoPane.createParallelGroup(Alignment.LEADING)
 														.addGroup(gl_fondoPane.createSequentialGroup()
-															.addComponent(lblN_4, GroupLayout.PREFERRED_SIZE, 19, GroupLayout.PREFERRED_SIZE)
+															.addComponent(n2Label, GroupLayout.PREFERRED_SIZE, 19, GroupLayout.PREFERRED_SIZE)
 															.addPreferredGap(ComponentPlacement.RELATED)
-															.addComponent(textField_18, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+															.addComponent(n2TextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 														.addGroup(gl_fondoPane.createSequentialGroup()
-															.addComponent(lblN_3, GroupLayout.PREFERRED_SIZE, 19, GroupLayout.PREFERRED_SIZE)
+															.addComponent(n1Label, GroupLayout.PREFERRED_SIZE, 19, GroupLayout.PREFERRED_SIZE)
 															.addPreferredGap(ComponentPlacement.UNRELATED)
-															.addComponent(textField_17, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))))))
+															.addComponent(n1TextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))))))
 										.addGroup(gl_fondoPane.createSequentialGroup()
-											.addComponent(lblVolumen, GroupLayout.PREFERRED_SIZE, 51, GroupLayout.PREFERRED_SIZE)
+											.addComponent(volumenLabel, GroupLayout.PREFERRED_SIZE, 51, GroupLayout.PREFERRED_SIZE)
 											.addPreferredGap(ComponentPlacement.UNRELATED)
-											.addComponent(textField_11, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+											.addComponent(volumenTextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 										.addGroup(gl_fondoPane.createSequentialGroup()
-											.addComponent(lblEsfuerzo, GroupLayout.PREFERRED_SIZE, 51, GroupLayout.PREFERRED_SIZE)
+											.addComponent(esfuerzoLabel, GroupLayout.PREFERRED_SIZE, 51, GroupLayout.PREFERRED_SIZE)
 											.addGap(18)
-											.addComponent(textField_14, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+											.addComponent(esfuerzoTextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 										.addGroup(gl_fondoPane.createSequentialGroup()
-											.addComponent(lblTiempoEntendido)
+											.addComponent(tEntendidoLabel)
 											.addPreferredGap(ComponentPlacement.RELATED)
-											.addComponent(textField_15, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))))
+											.addComponent(tEntendidoTextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))))
 							.addGap(21)
-							.addGroup(gl_fondoPane.createParallelGroup(Alignment.TRAILING)
-								.addComponent(list, GroupLayout.PREFERRED_SIZE, 12, GroupLayout.PREFERRED_SIZE)
-								.addComponent(textArea, GroupLayout.PREFERRED_SIZE, 233, GroupLayout.PREFERRED_SIZE))))
+							.addComponent(textArea, GroupLayout.PREFERRED_SIZE, 233, GroupLayout.PREFERRED_SIZE)))
 					.addContainerGap())
 		);
 		gl_fondoPane.setVerticalGroup(
@@ -329,110 +325,108 @@ public class Interface extends JFrame {
 					.addGroup(gl_fondoPane.createParallelGroup(Alignment.LEADING)
 						.addGroup(gl_fondoPane.createSequentialGroup()
 							.addGroup(gl_fondoPane.createParallelGroup(Alignment.LEADING)
-								.addComponent(lblLabel)
+								.addComponent(proyectoLabel)
 								.addGroup(gl_fondoPane.createSequentialGroup()
 									.addGap(3)
-									.addComponent(lblTipo))
-								.addComponent(textField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+									.addComponent(tipoLabel))
+								.addComponent(tipoTextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 							.addGap(11)
 							.addGroup(gl_fondoPane.createParallelGroup(Alignment.LEADING)
-								.addComponent(comboBox_1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+								.addComponent(proyectoComboBox, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 								.addGroup(gl_fondoPane.createSequentialGroup()
 									.addGap(3)
-									.addComponent(lblCc))
-								.addComponent(textField_1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+									.addComponent(ccLabel))
+								.addComponent(ccTextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 								.addGroup(gl_fondoPane.createSequentialGroup()
 									.addGap(3)
-									.addComponent(lblCodigo))
-								.addComponent(textField_2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+									.addComponent(codigoLabel))
+								.addComponent(codigoTextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 							.addGap(4)
 							.addGroup(gl_fondoPane.createParallelGroup(Alignment.LEADING)
 								.addGroup(gl_fondoPane.createSequentialGroup()
-									.addComponent(textField_4, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+									.addComponent(comentariosTextField_2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 									.addGap(7)
-									.addComponent(textField_6, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+									.addComponent(fanOutTextField_2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 								.addGroup(gl_fondoPane.createSequentialGroup()
 									.addGroup(gl_fondoPane.createParallelGroup(Alignment.LEADING)
 										.addGroup(gl_fondoPane.createSequentialGroup()
 											.addGap(7)
-											.addComponent(lblLabel_1)
+											.addComponent(sourcePackageLabel)
 											.addGap(6)
-											.addComponent(comboBox, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+											.addComponent(sourcePackageComboBox, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 											.addGap(11)
-											.addComponent(lblLabel_2)
+											.addComponent(packageLabel)
 											.addGap(6)
-											.addComponent(comboBox_2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+											.addComponent(packageComboBox, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 											.addGap(11)
-											.addComponent(lblLabel_3)
+											.addComponent(archivoLabel)
 											.addGap(6)
 											.addGroup(gl_fondoPane.createParallelGroup(Alignment.BASELINE)
-												.addComponent(comboBox_3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-												.addComponent(lblN_1))
+												.addComponent(archivoComboBox, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+												.addComponent(nMay2Label))
 											.addGap(11)
 											.addGroup(gl_fondoPane.createParallelGroup(Alignment.BASELINE)
-												.addComponent(lblLabel_4)
-												.addComponent(lblVolumen)
-												.addComponent(textField_11, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+												.addComponent(claseLabel)
+												.addComponent(volumenLabel)
+												.addComponent(volumenTextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 											.addGap(6)
 											.addGroup(gl_fondoPane.createParallelGroup(Alignment.BASELINE)
-												.addComponent(comboBox_4, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-												.addComponent(lblDificultad)
-												.addComponent(textField_12, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
+												.addComponent(claseComboBox, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+												.addComponent(dificultadLabel)
+												.addComponent(dificultadTextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
 										.addGroup(gl_fondoPane.createSequentialGroup()
 											.addGroup(gl_fondoPane.createParallelGroup(Alignment.LEADING)
 												.addGroup(gl_fondoPane.createSequentialGroup()
 													.addGap(3)
-													.addComponent(lblComentarios)
+													.addComponent(comentariosLabel)
 													.addGap(13)
-													.addComponent(lblFanOut)
+													.addComponent(fanOutLabel)
 													.addGap(12)
-													.addComponent(lblFanIn)
+													.addComponent(fanInLabel)
 													.addGap(11)
-													.addComponent(lblLongitud)
+													.addComponent(longitudLabel)
 													.addPreferredGap(ComponentPlacement.UNRELATED)
 													.addGroup(gl_fondoPane.createParallelGroup(Alignment.BASELINE)
-														.addComponent(lblN)
-														.addComponent(textField_9, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-														.addComponent(lblN_3)
-														.addComponent(textField_17, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
+														.addComponent(nMay1Label)
+														.addComponent(nMay1TextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+														.addComponent(n1Label)
+														.addComponent(n1TextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
 												.addGroup(gl_fondoPane.createSequentialGroup()
-													.addComponent(textField_3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+													.addComponent(comentariosTextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 													.addGap(7)
-													.addComponent(textField_5, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+													.addComponent(fanOutTextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 													.addGap(6)
-													.addComponent(textField_7, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+													.addComponent(fanInTextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 													.addGap(5)
 													.addGroup(gl_fondoPane.createParallelGroup(Alignment.BASELINE)
-														.addComponent(textField_8, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-														.addComponent(lblN_2)
-														.addComponent(textField_16, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))))
+														.addComponent(longitudTextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+														.addComponent(nLabel)
+														.addComponent(nTextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))))
 											.addPreferredGap(ComponentPlacement.RELATED)
 											.addGroup(gl_fondoPane.createParallelGroup(Alignment.BASELINE)
-												.addComponent(textField_10, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-												.addComponent(lblN_4)
-												.addComponent(textField_18, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))))
+												.addComponent(nMay2TextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+												.addComponent(n2Label)
+												.addComponent(n2TextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))))
 									.addGroup(gl_fondoPane.createParallelGroup(Alignment.LEADING)
 										.addGroup(gl_fondoPane.createSequentialGroup()
 											.addGap(11)
-											.addComponent(lblLabel_5)
+											.addComponent(metodoLabel)
 											.addGap(6)
 											.addGroup(gl_fondoPane.createParallelGroup(Alignment.BASELINE)
-												.addComponent(comboBox_5, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-												.addComponent(lblEsfuerzo)
-												.addComponent(textField_14, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
+												.addComponent(metodoComboBox, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+												.addComponent(esfuerzoLabel)
+												.addComponent(esfuerzoTextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
 										.addGroup(gl_fondoPane.createSequentialGroup()
 											.addPreferredGap(ComponentPlacement.RELATED)
 											.addGroup(gl_fondoPane.createParallelGroup(Alignment.BASELINE)
-												.addComponent(lblNivel)
-												.addComponent(textField_13, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))))
+												.addComponent(nivelLabel)
+												.addComponent(nivelTextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))))
 									.addPreferredGap(ComponentPlacement.RELATED)
 									.addGroup(gl_fondoPane.createParallelGroup(Alignment.BASELINE)
-										.addComponent(lblTiempoEntendido)
-										.addComponent(textField_15, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))))
+										.addComponent(tEntendidoLabel)
+										.addComponent(tEntendidoTextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))))
 						.addGroup(gl_fondoPane.createSequentialGroup()
-							.addGap(13)
-							.addComponent(list)
-							.addPreferredGap(ComponentPlacement.RELATED)
+							.addGap(19)
 							.addComponent(textArea, GroupLayout.PREFERRED_SIZE, 320, GroupLayout.PREFERRED_SIZE)))
 					.addGap(24)
 					.addComponent(analizarButton)
